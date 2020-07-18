@@ -17,12 +17,12 @@ export class HomeComponent implements OnInit {
       {
        link: "#",
        name: "Home",
-       selected: false
+       selected: true
      },
      {
       link: "#",
        name: "Explore Courses",
-       selected: true
+       selected: false
      },
      {
       link: "#",
@@ -32,6 +32,11 @@ export class HomeComponent implements OnInit {
      {
       link: "#",
        name: "Login",
+       selected: false
+     },
+     {
+      link: "#",
+       name: "Register",
        selected: false
      }
    ];
