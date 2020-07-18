@@ -1,0 +1,23 @@
+<app-header [headerData]="headerData"></app-header>
+
+<div class="container mt-3">
+    <div class="d-flex">
+        <h2 class="mr-auto">Courses</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-4 p-3" *ngFor="let course of courses">
+            <div class="card">
+                <img class="card-img-top" src={{course.imageUrl}} alt="..." />
+                <div class="card-body">
+                    <h4 class="card-title">{{course.name}}</h4>
+                    <p class="card-text">
+                        {{course.description}}
+                    </p>
+                    <p>Rating: {{course.rating}}</p>
+                    <a class="btn btn-success btn-block" href="#">Enroll this course</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

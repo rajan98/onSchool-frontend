@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Head } from '../shared/head';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class ContactComponent implements OnInit {
 
   headerData: Head[];
 
@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
      {
       link: "/contact",
        name: "Contact",
-       selected: false
+       selected: true
      },
      {
       link: "#",

@@ -1,28 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { Head } from '../shared/head';
+import { CourseService } from '../service/course.service';
+import { Course } from '../shared/course';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-course-list',
+  templateUrl: './course-list.component.html',
+  styleUrls: ['./course-list.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class CourseListComponent implements OnInit {
+
+  courses: Course[];
 
   headerData: Head[];
 
-  constructor() { }
+  constructor(private courseService: CourseService) {
+    this.courses = courseService.getCourses();
+   }
 
   ngOnInit(): void {
     this.headerData = [
       {
        link: "/home",
        name: "Home",
-       selected: true
+       selected: false
      },
      {
-      link: "/courselist",
+      link: "#",
        name: "Explore Courses",
-       selected: false
+       selected: true
      },
      {
       link: "/contact",
