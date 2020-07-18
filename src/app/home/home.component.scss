@@ -16,3 +16,17 @@
     background: url('../../assets/img/carousel-3.jpg');
     background-size: cover;
   }
+
+  .carosel-text {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #fff; 
+  }
+
+  @media only screen and (max-width: 600px) {
+    .carosel-text {
+      font-size: 4rem;
+      font-weight: 500;
+      color: #fff; 
+    }
+  }
