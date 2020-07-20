@@ -8,6 +8,9 @@ import { Head } from '../shared/head';
 })
 export class HomeComponent implements OnInit {
 
+  username='';
+  password='';
+
   headerData: Head[];
 
   constructor() { }
@@ -28,18 +31,12 @@ export class HomeComponent implements OnInit {
       link: "/contact",
        name: "Contact",
        selected: false
-     },
-     {
-      link: "#",
-       name: "Login",
-       selected: false
-     },
-     {
-      link: "#",
-       name: "Register",
-       selected: false
      }
    ];
+  }
+
+  loginFunction() {
+    alert("login");
   }
 
 }

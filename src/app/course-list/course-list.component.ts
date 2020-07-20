@@ -34,16 +34,6 @@ export class CourseListComponent implements OnInit {
       link: "/contact",
        name: "Contact",
        selected: false
-     },
-     {
-      link: "#",
-       name: "Login",
-       selected: false
-     },
-     {
-      link: "#",
-       name: "Register",
-       selected: false
      }
    ];
   }

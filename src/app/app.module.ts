@@ -13,6 +13,7 @@ import { StudentComponent } from './student/student.component';
 import { HomeComponent } from './home/home.component';
 import { CourseListComponent } from './course-list/course-list.component';
 import { ContactComponent } from './contact/contact.component';
+import { CoursePageComponent } from './course-page/course-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContactComponent } from './contact/contact.component';
     StudentComponent,
     HomeComponent,
     CourseListComponent,
-    ContactComponent
+    ContactComponent,
+    CoursePageComponent
   ],
   imports: [
     BrowserModule,

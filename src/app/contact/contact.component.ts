@@ -28,16 +28,6 @@ export class ContactComponent implements OnInit {
       link: "/contact",
        name: "Contact",
        selected: true
-     },
-     {
-      link: "#",
-       name: "Login",
-       selected: false
-     },
-     {
-      link: "#",
-       name: "Register",
-       selected: false
      }
    ];
   }
