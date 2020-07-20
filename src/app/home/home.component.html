@@ -106,7 +106,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
               quas.
             </p>
-            <a class="btn btn-success btn-block" href="#">Enroll this course</a>
+            <a class="btn btn-success btn-block" [routerLink]="['/coursepage', '1']">Enroll this course</a>
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
               quas.
             </p>
-            <a class="btn btn-success btn-block" href="#">Enroll this course</a>
+            <a class="btn btn-success btn-block" [routerLink]="['/coursepage', '2']">Enroll this course</a>
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
               quas.
             </p>
-            <a class="btn btn-success btn-block" href="#">Enroll this course</a>
+            <a class="btn btn-success btn-block" [routerLink]="['/coursepage', '3']">Enroll this course</a>
           </div>
         </div>
       </div>
@@ -165,7 +165,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" form="teacherLogin" (click)="loginFunction()" class="btn btn-primary">Login</button>
+        <button type="submit" form="teacherLogin" data-dismiss="modal" (click)="loginFunction()" class="btn btn-primary">Login</button>
       </div>
     </div>
   </div>

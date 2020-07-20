@@ -1,0 +1,12 @@
+#videoFrame {
+  width: 60rem;
+  height: 30rem;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #videoFrame {
+    width: 35rem;
+    height: 15rem;
+    
+  }
+}

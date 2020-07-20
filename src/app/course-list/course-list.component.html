@@ -14,7 +14,7 @@
                         {{course.description}}
                     </p>
                     <p>Rating: {{course.rating}}</p>
-                    <a class="btn btn-success btn-block" href="#">Enroll this course</a>
+                    <a class="btn btn-success btn-block" [routerLink]="['/coursepage', course.id]">Enroll this course</a>
                 </div>
             </div>
         </div>

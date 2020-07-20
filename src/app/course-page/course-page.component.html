@@ -1,1 +1,27 @@
-<p>course-page works!</p>
+<app-header [headerData]="headerData"></app-header>
+<!--Course Description-->
+<div class="container my-5">
+  <h1>{{course.name}}</h1>
+  <div class="d-flex justicy-center">
+    <iframe id="videoFrame" [src]="getVideoURL()">
+    </iframe>
+  </div>
+
+  <div id="subtitles" class="my-5">
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt dolore
+      itaque porro expedita atque? Porro rerum laudantium debitis dolores
+      cupiditate corrupti saepe, dignissimos harum inventore soluta distinctio,
+      iure qui doloremque! Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Molestiae minus ad autem possimus sint recusandae est? Eos animi
+      odit facere. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Cumque assumenda corporis delectus sunt pariatur totam exercitationem,
+      culpa rerum accusamus cum dolorum temporibus necessitatibus eveniet
+      reprehenderit facilis error, eligendi a nam debitis, voluptatem quibusdam
+      non? Nisi inventore, accusamus maxime culpa nostrum debitis neque, impedit
+      quibusdam alias quos atque delectus hic accusantium.
+    </p>
+  </div>
+</div>
+
+<app-footer></app-footer>

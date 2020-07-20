@@ -13,6 +13,6 @@ export class CourseService {
   }
 
   getCourse(id: string): Course {
-    return COURSES.filter((movie) => (movie.id === id))[0];
+    return COURSES.filter((course) => (course.id === id))[0];
   }
 }

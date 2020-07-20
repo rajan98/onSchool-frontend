@@ -3,6 +3,7 @@ export interface Course {
     name: string,
     description: string,
     imageUrl: string,
+    courseUrl: string,
     rating: string
 }
 
@@ -12,6 +13,7 @@ export let COURSES: Course[] = [
         name: 'Web Development',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit dolorum in inventore minus molestias deleniti.',
         imageUrl: '../../assets/img/card-img-1.jpg',
+        courseUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY',
         rating: '4.5/5'
     },
     {
@@ -19,6 +21,7 @@ export let COURSES: Course[] = [
         name: 'Mobile Development',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit dolorum in inventore minus molestias deleniti.',
         imageUrl: '../../assets/img/card-img-2.jpg',
+        courseUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY',
         rating: '4.7/5'
     },
     {
@@ -26,6 +29,7 @@ export let COURSES: Course[] = [
         name: 'Mathematics',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit dolorum in inventore minus molestias deleniti.',
         imageUrl: '../../assets/img/card-img-3.jpg',
+        courseUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY',
         rating: '3.5/5'
     },
     {
@@ -33,6 +37,7 @@ export let COURSES: Course[] = [
         name: 'Machine learning',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit dolorum in inventore minus molestias deleniti.',
         imageUrl: '../../assets/img/card-img-2.jpg',
+        courseUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY',
         rating: '4.2/5'
     },
     {
@@ -40,6 +45,7 @@ export let COURSES: Course[] = [
         name: 'Angular',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit dolorum in inventore minus molestias deleniti.',
         imageUrl: '../../assets/img/card-img-3.jpg',
+        courseUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY',
         rating: '4.7/5'
     },
     {
@@ -47,6 +53,7 @@ export let COURSES: Course[] = [
         name: 'React',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit dolorum in inventore minus molestias deleniti.',
         imageUrl: '../../assets/img/card-img-1.jpg',
+        courseUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY',
         rating: '3.2/5'
     }
 ]
