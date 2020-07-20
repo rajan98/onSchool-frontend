@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Head } from '../shared/head';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -8,12 +10,12 @@ import { Head } from '../shared/head';
 })
 export class HomeComponent implements OnInit {
 
-  username='';
-  password='';
+  username = '';
+  password = '';
 
   headerData: Head[];
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
     this.headerData = [
@@ -36,7 +38,16 @@ export class HomeComponent implements OnInit {
   }
 
   loginFunction() {
-    alert("login");
+    console.log(this.username + this.password);
+    if(this.username.length == 0){
+      alert("Please Enter Username");
+    } else if (this.password.length == 0){
+      alert("Please Enter Password");
+    } else if(this.username == 'admin' && this.password == 'admin'){
+      this.router.navigate(['teacher']);
+    } else {
+      alert("Username/Password is incorrect");
+    }
   }
 
 }
